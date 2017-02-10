@@ -1,10 +1,10 @@
 # Cracking-a-Vigenere-Cipher
 Comment and review will be appreciated: If you need any help please don't hesitate to contact me on : darji@uwindsor.ca or                                                                                                                     savanddarji@gmail.com
-Recover the encryption key and plain text of the vigenere cipher text using Kerckhoff's method
 
-The project is the implementation of Kerchoff's method to crack vigenere cipher using python 2.7.12
+Recover the encryption key and plain text of the vigenere cipher text using Kerckhoff's method.
 
-The code results number of coincedences with corresponding shifts in descending order.
+ The project is about the implementation of Kerchoff's method to crack vigenere cipher using python 2.7.12.
+ The code results number of coincedences with corresponding shifts in descending order.
 
 The sample result is shown as below:
 
