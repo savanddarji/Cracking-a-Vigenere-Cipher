@@ -49,18 +49,11 @@ L5=d.index(L5)
 L5+=1
 lth=[L,L1,L2,L3,L4,L5]
 print '\n'+'Possible key lengths are:',L,',',L1,',',L2,',',L3,',',L4,',',L5
-#print 'Required number of shifts to get L:',L
-#print 'Required number of shifts to get L1:',L1
-#print 'Required number of shifts to get L2:',L2
-#print 'Required number of shifts to get L3:',L3
-#print 'Required number of shifts to get L4:',L4
-#print 'Required number of shifts to get L5:',L5
 d1= gcd(L,L1)
 d1=gcd(d1,L2)
 d1=gcd(d1,L3)
 d1=gcd(d1,L4)
 d1=gcd(d1,L5)
-#L=d1 ### TO SELECT REQUIRED KEY LENGTH
 print 'gcf of all above shifts:',d1#gcf of all elements of d
 in1=0
 while in1<=2:
@@ -75,7 +68,6 @@ while in1<=2:
         v1+=1
 ######################     cracking caesar cipher    ##############################
     v1=0
-#print '\n'+'The decryption and encryption key:'
     Array=[]
     while v1<L:
         W=[]
@@ -96,12 +88,9 @@ while in1<=2:
             t+=1
         Max1=max(J)#for highest number in the list
         F = [D for D, E in enumerate(J) if E==Max1]# retrieve the index of the maximum number
-#    print 'Decryption key#',v1,':',F#decryption key
         F[0]=((26-F[0])%26)
         key=num[F[0]].upper()
         Array.append(key)
-#    print 'Encryption key#',v1,':',key
-#    print '\n'
         S1=[]
         for character in z[v1]:#loop for getting deciphered numbers
             number = ord(character) - 97
